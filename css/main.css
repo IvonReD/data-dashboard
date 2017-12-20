@@ -1,38 +1,145 @@
 * {
- margin: 0;
- padding: 0;
+  box-sizing: border-box; /*justas un elemento con box-sizing: border-box*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
 }
 
 header{
- text-align: center;
-}
-
-header div img{
- width: 300px;
-}
-
-#barra-lateral{
- position:fixed;  /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
- right: 0; /* Establecemos la barra en la izquierda */
- z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
- background-color: #757575;
- width: 100px;
- height: 100%;
-}
-
-/* boton de seleccion*/
-#barra-menus{
- background-color: #d4cecb;
+ background-color: #2A3845;
+ height: 80px;
+ position: fixed;
  width: 100%;
- height: 150px;
+ color: white;
+ }
+
+ .logo {
+   margin-top: 7px;
+   margin-left: 20px;
+  width: 15%;
+  float: left;
+ }
+
+#titulo > h1 {
+  color: #f7ad14;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 65px;
+
+  font-family: 'Didact Gothic', sans-serif;
 }
 
+.jon {
+margin-top: 10px;
+float: right;
+height: 70%;
+weight: 15px;
+border-radius: 100%;
+margin-right: 20px;
+}
+.fa-bell {
+ color: white;
+ float: right;
+ margin-right: 30px;
+ margin-top: 20px;
+
+}
+
+/* Boton Menu*/
+.fa-bars {
+color: white;
+float: right;
+margin-right: 135px;
+margin-top: 20px;
+}
+.caja-menu{
+ width: 150px;
+ height: 200px;
+ float: right;
+ margin: 60px -150px;
+}
+
+.caja-menu ul{
+ list-style: none;
+ margin-right: 20px;
+ font-size: 20px;
+}
+.mostrar-menu{
+ display: block;
+}
+
+.ocultar-menu{
+ display: none;
+}
+
+.clearfix{
+ overflow: auto;
+}
+
+/*.labo {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  float: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: 'Scada', sans-serif;
+}*/
+
+
+/*.logo{
+  margin-top: 10px;
+  float: left;
+  height: 20%;
+  weight: 15px;
+  border-radius: 100%;
+  margin-right: 10px;
+ }*/
+
+
+
+
+
+#menu {
+margin-top: 50px;
+  width: 400px;
+  float: left;
+
+}
+
+#menu ul a {
+  color: #5D5D5D;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 6px solid #FFC107;
+  transition: border-bottom .7s;
+}
+
+#menu ul a:hover {
+  border-bottom: 9px solid #6e6e6e;
+}
+
+
+
 /* boton de seleccion*/
+#filtro {
+  margin-top: 20px;
+  text-align: center;
+}
+
 #filtro-sedes{
+
  margin-left: 200px;
  text-align: center;
  width: 300px;
+ height: 20px;
  margin: 20px 350px;
+ font-size: 16px;
 }
 
 
@@ -60,87 +167,209 @@ header div img{
 }
 
 
+/*--------------------CONTENIDOSS---------------*/
 
-
-/*---------> clases para seccion students <---------*/
-.container-students {
- background: #f5eded;
- width: 90%;
- margin: 0 auto;
+/*--SECCION OVERVIEW (ESTILOS DE GRAFICA)*/
+#overviewTab {
  overflow: auto;
- padding: 1em;
+
 }
 
-.specialization {
+
+.graficaTotal-1, .graficaTotal-2, .graficaTotal-3 {
+ background-color: #2A3845;
+ display: inline-block;
+ color: white;
  float: left;
+ height: 500px;
+ margin: 40px 100px;
+ padding: 25px;
+ text-align: center;
  vertical-align: top;
- background-color: #ffffff;
- width: 30%;
- padding: 1em;
- box-shadow: 2px 2px 2px #aaa8a8;
+ width: 500px;
+ border-radius: 8px;
+ box-shadow: 4px 4px 4px #c4c4c4;
+ margin-right: 20px;
+ font-family: 'Barlow', sans-serif;
+ overflow: hidden;
 }
 
-.specialization h4 {
+.graficasNPS {
+  background-color: #2A3845;
+  display: inline-block;
+  color: white;
+  float: left;
+  height: 500px;
+  margin: 40px 100px;
+  padding: 25px;
+  text-align: center;
+  vertical-align: top;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px #c4c4c4;
+  margin-right: 20px;
+  font-family: 'Barlow', sans-serif;
+  overflow: hidden;
+}
+
+.graficasTotal span {
+ font-size: 1.5em;
+ font-weight: bold;
+ padding: 20px;
+}
+
+.contenedor-cajas {
+ padding: 1em;
+}
+
+.contenedor-grafica {
+ background-color: #4c5a66;
+ float: left;
+ text-align: center;
+ vertical-align: top;
+ width: 40%;
+ height: 150px;
+ padding: 0.8em;
+ border-radius: 8px;
+ /*box-shadow: 2px 2px 2px #aaa8a8;*/
+font-family: 'Barlow', sans-serif;
+}
+
+
+
+}
+
+.contenedor-acumulativo {
+
+}
+.grafica {
+ margin-top: 150px;
+}
+
+.grafica img {
+ padding-left: 1em;
+ padding-bottom: 0.8em;
+}
+
+
+.datoText {
+ font-size: 3.4em;
+ font-weight: 300;
+ border-bottom: 1px solid #ffff;
+ width: 2.7em;
+ height: 1.2em;
+ font-family: 'Barlow', sans-serif;
+}
+
+#dropout-porcentaje {
+ color: #db345b;
  font-weight: 700;
- margin-bottom: 1em;
- font-size: 1.2em;
- color: #4C4743;
+ font-family: 'Barlow', sans-serif;
 }
 
-.student-hide {
- float: right;
- width: 69%;
+.cajaTexto {
+ font-size: .8em;
+ padding-top: 1em;
+ font-family: 'Barlow', sans-serif;
 }
 
-.img-student {
- float: left;
- width: 25%;
- height: 8em;
+.number-boxes {
+ font-size: 3.5em;
+ font-weight: 300;
+ border-bottom: 1px solid #ffffff;
 }
 
-.name-student {
- float: left;
- vertical-align: top;
- width: 35%;
- text-align: center;
- font-weight: 700;
- font-size: 1.2em;
- color: #4C4743;
+/* SECCION ALUMNAS */
+#studentsTab {
+  overflow: auto;
 }
 
-.profile-student {
- margin-bottom: 2em;
- background-color: #ffffff;
- padding: 1em;
- overflow: auto;
- border-radius: 4px;
- box-shadow: 2px 2px 2px #aaa8a8;
+/*.especializacion {
+  position: relative;
+  background-color: #b51d1d;
+  width: 200px;
+  height: 100px;
+  padding: 1em;
+  box-shadow: 2px 2px 2px #aaa8a8;
 }
 
-.box-tech {
- background-color: #FFB230;
- float: left;
- vertical-align: top;
- height: 5em;
- margin-right: 2%;
- width: 19%;
- box-sizing: border-box;
- border-radius: 4px;
- color: #ffffff;
- text-align: center;
- font-weight: 500;
- box-shadow: 1px 2px 1px #949292;
+.especializacion h4 {
+  font-weight: 700;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  color: #4C4743;
+}*/
+
+
+.contenedor-coders{
+  float: right;
+  width: 800px;
+  margin-right: 200px;
+}
+.coders{
+  width: 600px;
+  margin: 20px 20px;
+}
+.info-coders{
+float: right;
 }
 
-.box-life {
- background-color: #ED6C44;
- float: left;
- vertical-align: top;
- height: 5em;
- width: 19%;
- border-radius: 4px;
- color: #ffffff;
- text-align: center;
- font-weight: 500;
- box-shadow: 1px 2px 1px #949292;
+.foto{
+  width: 150px;
+  height: 150px;
+}
+
+.nombre{
+  font-size: 30px;
+  margin-left: 200px;
+  text-align:justify;
+}
+
+.tech {
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+
+
+
+/* SECCION TEACHERS */
+
+#teachersTab {
+  overflow: auto;
+}
+
+.contenedor-teacher{
+  width: 900px;
+  margin-left: 400px;
+}
+.contenedor-teacher div{
+  display:inline-block;
+  margin: 20px 20px;
+}
+
+.contenedor-teacher div img{
+  width: 200px;
+  height: 200px;
+}
+
+.info{
+  float: right;
+  margin-bottom: 20px;
+}
+
+#teachersTab  hr{
+  width: 800px;
+  text-align: center;
+  margin-top: 40px;
+  margin: 0 auto;
+}
+
+#teachersTab  h4{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cajas-graficas-teacher{
+  margin-top: 80px;
 }
